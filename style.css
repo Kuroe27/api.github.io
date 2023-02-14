@@ -11,17 +11,42 @@ body {
     align-items: center;
      margin: 0;
      flex-direction: column;
-     padding: 20px;
-     background: rgb(219, 217, 217);
+     padding: 40px;
+     background: rgb(24, 23, 23);
 }
 
 
 .container{
-    background: white;
+    background: rgba(255, 254, 254, 0.966);
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.356), 0 6px 6px rgba(0, 0, 0, 0.1);
     padding: 50px 20px;
     text-align: center;
     width: 800px;
     max-width: 100%;
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+.trivia{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    padding: 10px 30px;
+    font-size: 1.3rem;
+    background: rgba(214, 204, 204, 0.24);
+    border: none;
+    cursor: pointer;
+    
+}
+.btn:hover{
+
+    background: rgb(59, 57, 57);
+    color: rgb(224, 216, 216);
+    box-shadow: 0 10px 20px rgba(41, 40, 40, 0.356), 0 6px 6px rgba(0, 0, 0, 0.1);
+ 
 }
