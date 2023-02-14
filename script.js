@@ -1,21 +1,14 @@
-const jokes = document.getElementById('joke')
-const btn = document.getElementById('jokeBtn')
+const trivia = document.getElementById('trivia')
+const generatebtn = document.getElementById('generatebtn')
 
-btn.addEventListener('click', generate)
 
-generate()
+generatebtn.addEventListener('click', generateTrivia);
 
-// USING ASYNC/AWAIT
-async function generate() {
-  const config = {
-    headers: {
-      Accept: 'application/json',
-    },
-  }
+generateTrivia();
 
-  const res = await fetch('https://icanhazdadjoke.com', config)
-
+async function generateTrivia(){
+  const res = await fetch('https://opentdb.com/api.php?amount=50')
   const data = await res.json()
 
-  jokes.innerHTML = data.joke
+  trivia.innerHTML = data.results[0].question
 }
